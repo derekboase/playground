@@ -1,0 +1,121 @@
+NORMAL MODE (esc): 
+#u - undo last # operations
+#w - jump # words
+
+c#w - change # words
+d#w - delete # words
+
+#cc - change # lines
+#dd - delete # lines
+
+#G - go to line #
+
+# ctrl + r - redo last # operations
+
+a - insert to right of selected char
+A - insert at the end of the line
+
+b - jump back by a word
+B - jump back to bol
+
+C - delete rest of word and enter insert mode
+
+D - delete rest of line without entering insert mode
+
+gg - beginning of line
+G - end of line
+
+h - left arrow
+
+i - insert to the left of selected char
+I - insert at the front of the line
+
+j - down arrow
+
+k - up arrow
+
+l - right arrow
+
+o - new line below the line the cursor is on
+O - new line above the line the cursor is on
+
+r - replace letter
+R - replace word
+
+w - jump forward to next point
+W - jump forward to eol
+
+0 - beginning of line without insert mode
+
+$ - end of line without insert mode
+% - jump from beginning and ending brackets
+> - shift right 
+< - shift left
+= - indent
+>> & << - shift line
+== - indent line
+
+cc - change whole line
+cw - change word from where the cursor is 
+
+dd - delete whole line
+dw - delete word 
+
+zz - center of screen
+
+ciw - change inner word
+ci( - change inner parenthases
+ci) - change inner parenthases
+ci[ - change inner bracket
+ci] - change inner bracket
+ci{ - change inner bracket
+ci} - change inner bracket
+
+diw - delete inner word
+
+:# - go to line #
+:q - quit
+:w - write 
+:wq - write then quit
+
+ctrl + r - redo
+
+gg=G - indent whole file 
+ggdG - delete file 
+
+/word - search for word 
+	n - next occurrence
+	N - previous occurence
+
+:s/old/new/g - replace
+:%s/old/new/g - replace everywhere
+
+VISUAL MODE (v):
+#y - yank # char
+#p - paste # times
+
+y#w - yank # words
+ 
+c - change 
+d - delete
+
+p - paste after
+P - paste before
+
+y - copy (yank)
+Y - yank whole line
+
+yy - yank whole line
+
+yi( - yank inner bracket
+yiw - yank inner word
+
+VISUAL LINE (SHIFT + v)
+VISUAL BLOCK (CTRL + v)
+:colorscheme 
+:set number
+:set relativenumber
+:set tabstop=#
+:set autoindent
+:set mouse=a
+:set mouse=""
