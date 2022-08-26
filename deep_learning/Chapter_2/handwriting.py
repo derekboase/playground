@@ -1,3 +1,4 @@
+import time
 import os 
 clear = lambda: os.system('cls')
 clear()
@@ -10,6 +11,8 @@ from keras import layers, models
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
 # Network configuration
+start_time = time.time_ns()
+print(start_time)
 network = models.Sequential()
 network.add(layers.Dense(512, activation='relu', input_shape=(28*28, )))
 network.add(layers.Dense(10, activation='softmax'))
@@ -28,5 +31,7 @@ network.fit(train_images, train_labels, epochs=5, batch_size=128)
 
 # Evaluation
 test_loss, test_acc = network.evaluate(test_images, test_labels)
-print(f'\n\nTest_loss: {test_loss}\nTest acc: {test_acc}')
+end_time = time.time_ns()
+print(f'The end time is {end_time}\n\nThe total time is {(end_time - start_time)*1e-9}')
+
 
