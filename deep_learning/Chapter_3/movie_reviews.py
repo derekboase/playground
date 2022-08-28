@@ -38,6 +38,7 @@ y_val = y_train[:10000]
 model = models.Sequential()
 model.add(layers.Dense(16, activation='relu', input_shape=(MAX_WORDS, )))
 model.add(layers.Dense(16, activation='relu'))
+
 model.add(layers.Dense(1, activation='sigmoid'))
 
 # Network
