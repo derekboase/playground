@@ -41,5 +41,4 @@ model.compile(optimizer='rmsprop', loss='categorical_crossentropy', metrics=['ac
     
     # Model fitting
 model.fit(train_images, train_labels, epochs=5, batch_size=64)
-
 # model.summary() # Uncomment to view the model summary 
